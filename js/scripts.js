@@ -1,10 +1,18 @@
 var put_in_array = function(number){
   var array = [];
-  
+
   for(var i = 0; i < number; i++){
     array.push(i + 1);
   }
   return array;
+}
+var divisible_by_three = function(array){
+  for(var i = 0; i < array.length; i++){
+    if(array[i] % 3 === 0){
+      array[i] = "PING";
+    }
+  }
+  console.log(array);
 }
 
 $(document).ready(function(){
@@ -13,5 +21,6 @@ $(document).ready(function(){
     var number = $("input#number").val()
 
     var array = put_in_array(number);
+    array = divisible_by_three(array);
   });
 });
