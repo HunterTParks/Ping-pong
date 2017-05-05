@@ -9,7 +9,10 @@
     <title></title>
   </head>
   <body>
+    <!-- Container used for organization of website -->
     <div class = "container">
+
+      <!-- Title of the webpage inside of a jumbotronn with a brief description of the webpage -->
       <jumbotron>
         <div class = "well">
           <h2>PING PONG</h2>
@@ -18,6 +21,8 @@
             number from a user and returns a range of numbers from 1 to the <br>
             chosen number with the following exceptions: <br>
           </p>
+
+          <!-- Explanation of rules  -->
           <div class = "panel panel-default">
             <ul id = "numbersList">
               <li> Numbers divisible by 3 are replaced with "PING"</li>
@@ -27,14 +32,23 @@
           </div>
         </div>
       </jumbotron>
+
+      <!-- Row used to create columns. I created 3 columns of equal size -->
       <div class = "row">
         <div class = "col-md-4">
+
+          <!-- Form used throughout project that contains
+          2 different inputs: A number range and a radio -->
           <form id = "mainform">
+
+            <!-- User inputs a number range HERE -->
             <div class="form-group">
               <label for="number">Enter a number:</label>
               <input id="number" type="text">
             </div>
 
+            <!-- Here is the Radio tab to see if the user wants to see the range
+            in order or in reverse. -->
             <p>
               What kind of order would you like your range to be outputted as?
             </p>
@@ -51,17 +65,24 @@
               </label>
             </div>
 
+            <!-- SUBMIT BUTTON HERE -->
             <button type = "submit">Submit</button>
           </form>
+
+          <!-- List used to display the range -->
           <ul id = "output">
 
           </ul>
         </div>
+
+        <!-- Second column used for displaying images -->
         <div class = "col-md-4" id = "midColumn">
           <img class = "picture" id = "pingpong" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_38.jpg/450px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_38.jpg" alt = "Pingpong"</img>
           <img class = "picture" id = "pingpong2" src = "https://www.getgamesgo.com/wp-content/uploads/2016/12/Ping-Pong-Tables.jpg">
           <img class = "picture" id = "pingpong3" src = "https://i.kinja-img.com/gawker-media/image/upload/s--UTzDyimB--/c_scale,fl_progressive,q_80,w_800/17lwukloo3inkjpg.jpg">
         </div>
+
+        <!-- Third column used for giving credit to the author of the program -->
         <div class = "col-md-4">
           <div class = "well">
             <h4>This app was made by:</h4>
