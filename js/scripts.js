@@ -22,7 +22,6 @@ var divisible_by_five = function(array){
       array[i] = "PONG";
     }
   }
-  console.log(array);
   return array;
 }
 
@@ -33,7 +32,6 @@ var divisible_by_fiveteen = function(array){
       array[i] = "PING-PONG";
     }
   }
-  console.log(array);
   return array;
 }
 
@@ -44,8 +42,9 @@ $(document).ready(function(){
     var number = $("input#number").val()
 
     var array = put_in_array(number);
-    array = divisible_by_three(array);
-    array = divisible_by_five(array);
     array = divisible_by_fiveteen(array);
+    array = divisible_by_five(array);
+    array = divisible_by_three(array);
+
   });
 });
