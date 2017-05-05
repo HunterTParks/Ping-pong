@@ -45,6 +45,7 @@ $(document).ready(function(){
     array = divisibleByFive(array);
     array = divisibleByThree(array);
 
+    $("ul#output").empty();
     for(var i = 0; i < array.length; i++){
       $("ul#output").append("<li> " + array[i] + " </li>");
     }
