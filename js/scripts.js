@@ -35,6 +35,12 @@ var divisibleByThree = function(array){
   return array;
 }
 
+var modulus = function(array, i){
+  test = ((array[i] % 15) + 15) % 15
+  console.log("I EQUALS " + i + "TEST EQUALS " + test);
+  return test;
+}
+
 $(document).ready(function(){
   $("form#mainform").submit(function(event){
     event.preventDefault();
@@ -46,12 +52,24 @@ $(document).ready(function(){
     array = divisibleByThree(array);
 
     $("ul#output").empty();
-    for(var i = 0; i < array.length; i++){
+    $(".picture").hide();
+    //$("#pingpong").remove();
+    for(var i = 1; i < array.length; i++){
       $("ul#output").append("<li> " + array[i] + " </li>");
-      if(array[i] === 15){
-        
-      }
-    }
 
+      if(i === 14){
+        $("#pingpong").show();
+      }
+      if(i === 29){
+        $("#pingpong2").show();
+      }
+      if(i === 44){
+        $("#pingpong3").show();
+      }
+
+      // if(array.length < 15){
+      //   $("midColumn").empty();
+      // }
+    }
   });
 });

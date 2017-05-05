@@ -27,7 +27,7 @@ html, body {
   padding: 10px;
 }
 
-#pingpong {
+.picture {
   display: none;
   height: 200px;
 }
