@@ -53,9 +53,17 @@ $(document).ready(function(){
 
     $("ul#output").empty();
     $(".picture").hide();
-    //$("#pingpong").remove();
-    for(var i = 1; i < array.length; i++){
-      $("ul#output").append("<li> " + array[i] + " </li>");
+
+    var inputCheck = ($("input:radio[name=order]:checked").val());
+    console.log(inputCheck);
+
+    for(var i = 0; i < array.length; i++){
+      if(inputCheck === "ordered"){
+        $("ul#output").append("<li> " + array[i] + " </li>");
+      }
+      else if(inputCheck === "reverse"){
+        $("ul#output").prepend("<li> " + array[i] + " </li>");
+      }
 
       if(i === 14){
         $("#pingpong").show();
@@ -66,10 +74,6 @@ $(document).ready(function(){
       if(i === 44){
         $("#pingpong3").show();
       }
-
-      // if(array.length < 15){
-      //   $("midColumn").empty();
-      // }
     }
   });
 });
