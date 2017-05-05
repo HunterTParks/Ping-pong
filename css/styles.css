@@ -30,4 +30,5 @@ html, body {
 .picture {
   display: none;
   height: 200px;
+  margin-top: 200px;
 }

@@ -57,22 +57,34 @@ $(document).ready(function(){
     var inputCheck = ($("input:radio[name=order]:checked").val());
     console.log(inputCheck);
 
-    for(var i = 0; i < array.length; i++){
-      if(inputCheck === "ordered"){
+    if(inputCheck === "ordered"){
+      $("ul#output").empty();
+      for(var i = 0; i < array.length; i++){
         $("ul#output").append("<li> " + array[i] + " </li>");
+        if(i === 14){
+          $("#pingpong").show();
+        }
+        if(i === 29){
+          $("#pingpong2").show();
+        }
+        if(i === 44){
+          $("#pingpong3").show();
+        }
       }
-      else if(inputCheck === "reverse"){
+    }
+    else if(inputCheck === "reverse"){
+      $("ul#output").empty();
+      for(var i = array.length; i > 0; i--){
         $("ul#output").prepend("<li> " + array[i] + " </li>");
-      }
-
-      if(i === 14){
-        $("#pingpong").show();
-      }
-      if(i === 29){
-        $("#pingpong2").show();
-      }
-      if(i === 44){
-        $("#pingpong3").show();
+        if(i === 14){
+          $("#pingpong").show();
+        }
+        if(i === 29){
+          $("#pingpong2").show();
+        }
+        if(i === 44){
+          $("#pingpong3").show();
+        }
       }
     }
   });
