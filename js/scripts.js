@@ -8,7 +8,6 @@ var putInArray = function(number){
 }
 
 var divisibleByFiveteen = function(array){
-  console.log(array.length);
   for(var i = 0; i < array.length; i++){
     if(array[i] % 15 === 0){
       array[i] = "PING-PONG";
@@ -37,7 +36,6 @@ var divisibleByThree = function(array){
 
 var modulus = function(array, i){
   test = ((array[i] % 15) + 15) % 15
-  console.log("I EQUALS " + i + "TEST EQUALS " + test);
   return test;
 }
 
@@ -80,12 +78,11 @@ $(document).ready(function(){
       }
     }
     else if(inputCheck === "reverse"){
-      console.log(inputCheck);
       // Else if statement saying it will pass through if the user wanted
       // the range to be in reverse order IE: 5, 4, 3, 2, 1
       $("ul#output").empty();
       for(var i = array.length - 1; i >= 0; i--){
-        console.log(array[i]);
+        (array[i]);
         $("ul#output").append("<li> " + array[i] + " </li>");
         if(i === 14){
           $("#pingpong").show();
