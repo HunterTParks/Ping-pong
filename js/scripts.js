@@ -1,4 +1,4 @@
-var put_in_array = function(number){
+var putInArray = function(number){
   var array = [];
 
   for(var i = 0; i < number; i++){
@@ -7,7 +7,7 @@ var put_in_array = function(number){
   return array;
 }
 
-var divisible_by_three = function(array){
+var divisibleByThree = function(array){
   for(var i = 0; i < array.length; i++){
     if(array[i] % 3 === 0){
       array[i] = "PING";
@@ -16,7 +16,7 @@ var divisible_by_three = function(array){
   return array;
 }
 
-var divisible_by_five = function(array){
+var divisibleByFive = function(array){
   for(var i = 0; i < array.length; i++){
     if(array[i] % 5 === 0){
       array[i] = "PONG";
@@ -25,7 +25,7 @@ var divisible_by_five = function(array){
   return array;
 }
 
-var divisible_by_fiveteen = function(array){
+var divisibleByFiveteen = function(array){
   console.log(array.length);
   for(var i = 0; i < array.length; i++){
     if(array[i] % 15 === 0){
@@ -41,10 +41,10 @@ $(document).ready(function(){
     event.preventDefault();
     var number = $("input#number").val()
 
-    var array = put_in_array(number);
-    array = divisible_by_fiveteen(array);
-    array = divisible_by_five(array);
-    array = divisible_by_three(array);
+    var array = putInArray(number);
+    array = divisibleByFiveteen(array);
+    array = divisibleByFive(array);
+    array = divisibleByThree(array);
 
     for(var i = 0; i < array.length; i++){
       $("ul#output").append("<li> " + array[i] + " </li>");
