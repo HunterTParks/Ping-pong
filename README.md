@@ -13,11 +13,13 @@ This web page will create a web application that takes a number from a user and 
 
 Specs:<br>
 
-|  behavior | input  | output  |
+|  Behavior | Before Output  | Output  |
 |---|---|---|
-| User inputs a number   |   | 5.  |
-| Puts number range into array  | 5  | array[1, 2, 3, 4, 5]  |
-|  | Hellothere  | hellothere  |
+| User inputs a number   |   | 15.  |
+| Puts number range into array  | 15  | array[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]  |
+| Changes all numbers divisible by 15 into PINGPONG | array[1, 2, 3,....14, 15]  | array[1, 2, 3,....14, PING-PONG]  |
+| Changes all numbers divisible by 5 into PONG | array[1, 2, 3,....14, 15] | array[1, 2, 3, 4, PONG....14, PING-PONG] |
+| Changes all numbers divisible by 3 into PING | array[1, 2, 3, 4, PONG....14, PING-PONG] | array[1, 2, PING, 4, PONG....14, PING-PONG] |
 
 
 
