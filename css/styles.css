@@ -26,3 +26,8 @@ html, body {
 #info {
   padding: 10px;
 }
+
+#pingpong {
+  display: none;
+  height: 200px;
+}

@@ -48,6 +48,9 @@ $(document).ready(function(){
     $("ul#output").empty();
     for(var i = 0; i < array.length; i++){
       $("ul#output").append("<li> " + array[i] + " </li>");
+      if(array[i] === 15){
+        
+      }
     }
 
   });
