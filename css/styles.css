@@ -2,6 +2,22 @@
   border-radius: 20px;
 }
 
+body {
+  /*background-color: inherit;*/
+}
+
+.container {
+  /*background-color: inherit;*/
+}
+
+.well {
+  /*background-color: inherit;*/
+}
+
 #numbersList {
   padding-top: 10px;
+}
+
+#info {
+  padding: 10px;
 }
