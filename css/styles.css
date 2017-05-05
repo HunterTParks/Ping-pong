@@ -3,19 +3,24 @@
 }
 
 body {
-  /*background-color: inherit;*/
+
+}
+
+html, body {
+  background-color: #F7C4A5;
 }
 
 .container {
-  /*background-color: inherit;*/
+  background-color: #E9FAE3;
 }
 
 .well {
-  /*background-color: inherit;*/
+  background-color: #CBDFBD;
 }
 
 #numbersList {
   padding-top: 10px;
+  background-color: #FCFCFC;
 }
 
 #info {
