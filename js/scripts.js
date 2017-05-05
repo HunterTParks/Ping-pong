@@ -23,7 +23,20 @@ var divisible_by_five = function(array){
     }
   }
   console.log(array);
+  return array;
 }
+
+var divisible_by_fiveteen = function(array){
+  console.log(array.length);
+  for(var i = 0; i < array.length; i++){
+    if(array[i] % 15 === 0){
+      array[i] = "PING-PONG";
+    }
+  }
+  console.log(array);
+  return array;
+}
+
 
 $(document).ready(function(){
   $("form#mainform").submit(function(event){
@@ -33,5 +46,6 @@ $(document).ready(function(){
     var array = put_in_array(number);
     array = divisible_by_three(array);
     array = divisible_by_five(array);
+    array = divisible_by_fiveteen(array);
   });
 });
