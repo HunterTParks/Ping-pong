@@ -18,24 +18,35 @@
             number from a user and returns a range of numbers from 1 to the <br>
             chosen number with the following exceptions: <br>
           </p>
-          <ul>
-            <li> Numbers divisible by 3 are replaced with "PING"</li>
-            <li> Numbers divisible by 5 are replaced with "PONG"</li>
-            <li> Numbers divisible by 15 are replaced with "PING-PONG"</li>
-          </ul>
+          <div class = "panel panel-default">
+            <ul id = "numbersList">
+              <li> Numbers divisible by 3 are replaced with "PING"</li>
+              <li> Numbers divisible by 5 are replaced with "PONG"</li>
+              <li> Numbers divisible by 15 are replaced with "PING-PONG"</li>
+            </ul>
+          </div>
         </div>
       </jumbotron>
-      <form id = "mainform">
-        <div class="form-group">
-          <label for="number">Enter a number:</label>
-          <input id="number" type="text">
+      <div class = "row">
+        <div class = "col-md-8">
+          <form id = "mainform">
+            <div class="form-group">
+              <label for="number">Enter a number:</label>
+              <input id="number" type="text">
+            </div>
+
+            <button type = "submit">Submit</button>
+          </form>
+          <ul id = "output">
+
+          </ul>
         </div>
-
-        <button type = "submit">Submit</button>
-      </form>
-      <ul id = "output">
-
-      </ul>
+        <div class = "col-md-4">
+          <div class = "panel panel-default" id = "info">
+            
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
