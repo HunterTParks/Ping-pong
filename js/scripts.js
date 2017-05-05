@@ -46,5 +46,9 @@ $(document).ready(function(){
     array = divisible_by_five(array);
     array = divisible_by_three(array);
 
+    for(var i = 0; i < array.length; i++){
+      $("ul#output").append("<li> " + array[i] + " </li>");
+    }
+
   });
 });
